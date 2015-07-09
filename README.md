@@ -1,2 +1,0 @@
-# tjur
-A new Language

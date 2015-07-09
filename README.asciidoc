@@ -1,0 +1,14 @@
+= tjur
+A new Language
+
+== What's with the name?
+Because, it comes from Clojure, it is Typed, and it has four letters!
+
+== Goals
+
+1. Strictly typed, inferred, optionally dynamically typed.
+2. Compiled, with optional jit.
+3. Flexible memory management: (Manual, rust style ownership tracking, reference counted, garbage collected)
+4. Interoperability with C++
+5. Flexible module system. (ES6 and go inspired. Bundler and Homebrew style dependency resolution)
+6. Node style async API. Agent based multithreading. (Everything is Agent local. CSP style communication)
