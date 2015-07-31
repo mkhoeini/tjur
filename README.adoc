@@ -23,3 +23,5 @@ Because, it comes from Clojure, it is Typed, and it has four letters!
 . Auto infer properties of code. Whatever can not be infered doesn't any value for implementation. Expose sane restrictions so that things could be infered. However, let users override the system.
 . Breakdown the system to completely customiseable and replaceable subsystems. Asume that the compiler itself is a highly specialized interpreter.
 . As Alan Kay, The inventor of Object-oriented, says that he thaught about OO as cells communicating with each other, only through messages, Agent based concurrency comes real close. You could say that Pony almost got it perfectly. Investigate the well of ideas here. Smalltalk, Agent based messaging, CSP, Node style asyncrony, Promises, My idea about implicit context, etc.
+. Being able to compile on module boundaries seems a serious yet justifyable restriction. I need to think about it.
+. Facebook's flow type checker does a wonderful job. Might want to get inspired by it! ;)
