@@ -15,7 +15,23 @@ Because, it comes from Clojure, it is Typed, and it has four letters!
 . Target WebAssembly
 . Flexible module system. (ES6 and go inspired. Bundler and Homebrew style dependency resolution)
 . Node style async API. Agent based multithreading. (Everything is Agent local. CSP style communication)
+. Tooling. (a la. GoDoc, style, etc.)
 
+
+== Notes on Goals
+
+. On the side on being compiled, it must be noted that there are two different important sides to this:
+  .. First, whole program optimization is invaluable. For example it might be possible to determine through
+    analize that a persistent DS can be converted to a mutable DS and buy a tremendous performance.
+  .. Second, what rust noted about importance of independence of modules of code and not requiring a special
+    runtime.
+. On the goal of memory management, Rich's argument is that that blongs to the era of Place oriented programming (PLOP).
+  However, to compete with the performance of C, going that road seems inevitable. There might still exist some remedy.
+  People from ObjC land or Java land don't suffer much from the penalty of ARC or GC, but even that slight drawback might
+  be eliminable through name analysis. Investigate if it is possible to enumerate all possible names of places in a program
+  an insert right kind of memory management automatically.
+. About asyncronity and AOP it must be noted that in the end it seems that CSP looks more fundamental than agents and FRP.
+  I must deside what is the right abstraction to be putted there as a basic building block. AOP or CSP?
 
 == Ideas
 
