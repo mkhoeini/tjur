@@ -43,3 +43,10 @@ Because, it comes from Clojure, it is Typed, and it has four letters!
 . Facebook's flow type checker does a wonderful job. Might want to get inspired by it! ;)
 . For the shape of code and data there is this idea that data is a black box with some shiped primitives to move it. Like presenting natural numbers as a zero, which we do not undrestand it any further, and the SUCC operator. Then other operations can be built on top. This idea sits well, in my opinion, with the computer architecture, and has its relations with pipelining, range based programming, and glorified Stuart Sierra's OOP or transducers.
 . Smalltalk like live environment, and a framework to easily create such kind of things is very very helpful. Afterall tooling is also part of environment. Imagin that people created live env for games like unity without a need for build and deploy. Gamers been on the same env that the game devs were!
+
+== Crasy Stupid Programming Language
+
+... is a programmable virtual machine spesification with a predifined set of things set in the stone. And a default program.
+The constant bits are a definition of a strongly statically typed minimal abstract syntax tree and a set of intrinsics, like interpretting/jitting/compiling the AST.
+The default program is an interpretter which generates AST. However, the interpretter is completely dynamic and is in the spirit of smalltalk. Which means that you can completely replace it with something else, for example a ruby parser or something entirely different, in the middle of the interpretation.
+Also, the specification introduces points of vendor extensions, in the spirit of opengl vendor extensions, for functionalities like custom memory managers or other target specific features.
